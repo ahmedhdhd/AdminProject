@@ -1,0 +1,24 @@
+name: Shell Commands
+
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  run-shell-command:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      - name: Echo a string
+        run: echo "Starting"
+
+      - name: Multiline script
+        run: |
+          node -v
+          npm -v
+
