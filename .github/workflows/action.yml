@@ -1,6 +1,5 @@
 name: Shell Commands with the Checkout Action
-on:
-  push
+on:[push]
 
 jobs:
   run-github-actions:
